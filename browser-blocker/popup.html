@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PrivacyGuard blocker</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup">
+  <main class="card">
+    <div class="brand"><span>◆</span><b>PrivacyGuard</b></div>
+    <h1>Betting site blocker</h1>
+    <label class="toggle-row"><span><b id="status">Checking…</b><small>Blocks matching domain names</small></span><input id="enabled" type="checkbox"><i></i></label>
+    <section class="list-status"><b>Gambling domain list</b><p id="list-status">Checking saved list…</p><button id="update-list" class="secondary wide">Update list</button></section>
+    <button id="manage" class="secondary wide">Manage site lists</button>
+    <p class="note">On update, the extension downloads a public list from <a href="https://github.com/hagezi/dns-blocklists" target="_blank" rel="noreferrer">HaGeZi</a>. Your visited website addresses are not sent with that request. No list can guarantee every betting site is included.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

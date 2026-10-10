@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Blocker settings · PrivacyGuard</title><link rel="stylesheet" href="ui.css"></head>
+<body>
+  <main class="card settings-card">
+    <div class="brand"><span>◆</span><b>PrivacyGuard</b></div>
+    <p class="eyebrow">LOCAL SETTINGS</p>
+    <h1>Website block settings</h1>
+    <p class="lead">Add domains to block and domains to allow. Subdomains are included. These lists stay in this browser.</p>
+    <label for="blocklist">Blocked domains</label>
+    <textarea id="blocklist" rows="5" placeholder="betting-example.com&#10;casino-example.net"></textarea>
+    <label for="allowlist">Allowed domains (exceptions)</label>
+    <textarea id="allowlist" rows="4" placeholder="example.com"></textarea>
+    <div class="actions"><button id="save" class="primary">Save settings</button><span id="message" role="status"></span></div>
+    <p class="note">In addition to your blocked list, matching uses domain-name keywords: bet, betting, xbet, casino, gambling, poker, sportsbook, bookmaker, wager, and rummy. Keyword matching can miss sites with unrelated names or occasionally block unrelated sites. Add exceptions above or pause the blocker from its toolbar button.</p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

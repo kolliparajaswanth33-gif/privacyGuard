@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "PrivacyGuard Betting Site Blocker",
+  "version": "1.0.0",
+  "description": "Locally blocks browser navigations to betting and gambling domains based on hostname keywords.",
+  "minimum_chrome_version": "111",
+  "permissions": ["webNavigation", "storage", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "PrivacyGuard blocker", "default_popup": "popup.html" },
+  "options_page": "options.html"
+}
